@@ -13,6 +13,9 @@ body {
 
 .container {
     display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
 }
 
 .sidebar {
@@ -38,10 +41,10 @@ body {
 
 .odin {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 15vh;
-    display: inline-flex;   
+    display: inline-flex;
     left: 0;
     justify-content: center;
     align-items: center;
@@ -50,7 +53,7 @@ body {
 }
 
 .odin-text {
-    font-size: 70px;
+    font-size: 90px;
     color: white;
     font-family: Norse-Bold;
 
@@ -66,16 +69,80 @@ a {
     color: white;
 }
 
-.container {
-    background-color: whitesmoke;
+
+.main {
+    flex-grow: 1;
+    position: relative;
 }
 
 .text-container {
     width: 50vw;
-    padding: 15vh 2vw;
+    padding: 10vh 0 0 3vw;
 }
 
 p.text {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.login-text {
+    padding: 0 3vw;
+}
+
+.login-page {
+    position: absolute;
+    background-color: #fff;
+    height: 35vh;
+    width: 100%;
+    top: 36vh;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    width: 45%;
+    height: 70%;
+    overflow-wrap: break-word;
+    padding-left: 3vw;
+}
+
+input {
+    border-radius: 3px;
+    border: #E5E7EB 1px solid;
+}
+
+label {
+    font-size: 0.7em
+}
+
+.buttons {
+    position: relative;
+    top: 340px;
+    margin: 0px 0 0 3vw;
+}
+
+.create-button {
+    position: fixed;
+    background-color: #596D48;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+    font-weight: bold;
+    box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    bottom: 21%;
+}
+
+span {
+    position: fixed;
+    bottom: 17%;
+}
+
+span a {
+    color: #596D48;
+    text-decoration: none;
 }
