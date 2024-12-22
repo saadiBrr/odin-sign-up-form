@@ -11,6 +11,7 @@
 
 <body>
     <div class="container">
+
         <div class="sidebar">
 
             <img class='sidebar-img' src="assets/photo-1585202900225-6d3ac20a6962.avif" alt="Green leaves in a jungle">
@@ -25,71 +26,70 @@
 
             </p>
         </div>
+
         <div class="main">
+
             <div class="text-container">
+
                 <p class="text">This is not a real online service. You know you need something like this in your life to
                     help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</p>
                 <p class="text">You <em>know</em> you want to.</p>
+
             </div>
 
             <div class="login-container">
+
                 <div class="login-page">
+
                     <p class="text login-text">Let's do this!</p>
 
                     <div class="form-container">
 
-                        <div class="left-forms">
+                        <form id="form" action="" method="post" class="form">
 
-                            <form action="" method="post" class="form">
-                                <label for="first-name">FIRST NAME:
-                                    <br></label>
-                                <input type="text" name="first-name" id="first-name">
-                            </form>
+                            <div class="left-forms">
+                                <div>
+                                    <label for="first-name">FIRST NAME:</label><br>
+                                    <input type="text" name="first-name" id="first-name" required>
+                                </div>
 
-                            <form action="" method="post" class="form">
-                                <label for="email">EMAIL:
-                                    <br></label>
-                                <input type="email" name="email" id="email">
-                            </form>
+                                <div>
+                                    <label for="email">EMAIL:</label><br>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
 
-                            <form action="" method="post" class="form">
-                                <label for="password">PASSWORD:
-                                    <br></label>
-                                <input type="password" name="password" id="password">
-                            </form>
-                        </div>
+                                <div>
+                                    <label for="password">PASSWORD:</label><br>
+                                    <input type="password" name="password" id="password" required>
+                                </div>
+                            </div>
 
-                    <div class="right-forms">
+                            <div class="right-forms">
+                                <div>
+                                    <label for="last-name">LAST NAME:</label><br>
+                                    <input type="text" name="last-name" id="last-name" required>
+                                </div>
 
-                        <form action="" method="post" class="form">
-                            <label for="last-name">LAST NAME:
-                                <br></label>
-                            <input type="text" name="last-name" id="last-name">
-                        </form>
+                                <div>
+                                    <label for="phonenumber">PHONE NUMBER:</label><br>
+                                    <input type="tel" name="phonenumber" id="phonenumber" required>
+                                </div>
 
-                        <form action="" method="post" class="form">
-                            <label for="phonenumber">PHONE NUMBER:
-                                <br></label>
-                            <input type="tel" name="phonenumber" id="phonenumber">
-                        </form>
-
-                        <form action="" method="post" class="form">
-                            <label for="confirmpassword">CONFIRM PASSWORD:
-                                <br></label>
-                            <input type="password" name="confirmpassword" id="confirmpassword">
+                                <div>
+                                    <label for="confirmpassword">CONFIRM PASSWORD:</label><br>
+                                    <input type="password" name="confirmpassword" id="confirmpassword" required>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-
             <div class="buttons">
-                <button class="create-button">Create Account</button>
+                <button class="create-button" id="create-button" form="form" type="submit">Create Account</button>
                 <br>
                 <span>Already have an account? <a href="#">Log in</a></span>
             </div>
         </div>
-
-    </div>
     </div>
 </body>
 
