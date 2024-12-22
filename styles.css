@@ -98,7 +98,8 @@ p.text {
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
-.form-container, form {
+.form-container,
+form {
     display: flex;
     gap: 4vw;
     width: 45%;
@@ -109,11 +110,13 @@ p.text {
     padding-left: 3vw;
 }
 
-.left-forms, .right-forms {
+.left-forms,
+.right-forms {
     flex: 1;
 }
 
-.left-forms>div, .right-forms>div {
+.left-forms>div,
+.right-forms>div {
     margin: 10px 5px;
 }
 
@@ -127,7 +130,8 @@ input {
     border: #E5E7EB 1px solid;
 }
 
-#password:invalid, #confirmpassword:invalid {
+#password:invalid,
+#confirmpassword:invalid {
     border: red 1px solid;
 }
 
@@ -163,4 +167,20 @@ span {
 span a {
     color: #596D48;
     text-decoration: none;
+}
+
+.footer {
+    color: black
+}
+
+.footer a {
+    color: black
+}
+
+#github-icon {
+    height: 15px;
+    width: auto;
+    position: absolute;
+    bottom: 35px;
+    left: 82px;
 }
